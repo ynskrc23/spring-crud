@@ -24,10 +24,12 @@ public class CustomerService {
     }
 
     public Customer getOneCustomer(Long customerId){
+
         return customerRepository.findById(customerId).get();
     }
 
     public void deleteCustomer(Long customerId){
+
         customerRepository.deleteById(customerId);
     }
 

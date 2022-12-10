@@ -22,6 +22,7 @@ public class CustomerController {
         return new ResponseEntity<Customer>(addCustomer, HttpStatus.CREATED);
     }
 
+    // http:localhost:8080/api/customer/all
     @GetMapping("/all")
     public ResponseEntity<List<Customer>> getAllCustomer(){
         List<Customer> allCustomer = customerService.getAllCustomer();
